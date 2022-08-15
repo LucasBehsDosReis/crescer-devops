@@ -37,7 +37,7 @@ jobs:
       - name: Análise SonarCloud
         run: ./mvnw verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=lab-devops-project
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKE }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           
   sec-tests:
     name: Análise de Segurança
